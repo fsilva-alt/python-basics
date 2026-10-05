@@ -1,7 +1,7 @@
 /* Course-specific styles. They are inlined after the base theme, so you can
    (1) redefine design tokens and (2) add new classes for use in your Markdown. */
 
-/* 1. Tokens: chapters fill the whole content area by default.
+/* 1. Tokens: chapters use 85% of the content area by default.
    Uncomment to cap them at a narrower reading column instead. */
 :root {
   /* --content-w: 860px; */
