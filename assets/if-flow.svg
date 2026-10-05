@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 570" role="img" aria-labelledby="if-title">
+  <title id="if-title">Flowchart of an if / elif / else statement: Python checks each condition in order and runs exactly one block</title>
+
+  <defs>
+    <marker id="arrow-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#9aa0ae"/>
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5fd39a"/>
+    </marker>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#ff8a8a"/>
+    </marker>
+  </defs>
+
+  <!-- Background panel -->
+  <rect x="8" y="8" width="744" height="554" rx="4" fill="#161821" stroke="#2a2e3a" stroke-width="2"/>
+
+  <!-- Start -->
+  <rect x="190" y="30" width="120" height="36" rx="4" fill="#1e2130" stroke="#9aa0ae" stroke-width="2"/>
+  <text x="250" y="53" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="15" fill="#e8e9ef">start</text>
+  <line x1="250" y1="66" x2="250" y2="98" stroke="#9aa0ae" stroke-width="2" marker-end="url(#arrow-muted)"/>
+
+  <!-- Keyword labels -->
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="700" fill="#8b7dff" text-anchor="end">
+    <text x="112" y="156">if</text>
+    <text x="112" y="306">elif</text>
+    <text x="112" y="432">else</text>
+  </g>
+
+  <!-- Condition 1 -->
+  <polygon points="250,100 370,150 250,200 130,150" fill="#1e2130" stroke="#8b7dff" stroke-width="2"/>
+  <text x="250" y="155" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="15" fill="#e8e9ef">Is condition 1 True?</text>
+
+  <!-- Condition 1: True -->
+  <line x1="370" y1="150" x2="458" y2="150" stroke="#5fd39a" stroke-width="2" marker-end="url(#arrow-green)"/>
+  <text x="414" y="140" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="14" fill="#5fd39a">True</text>
+  <rect x="460" y="124" width="220" height="52" rx="3" fill="#1e2130" stroke="#5fd39a" stroke-width="2"/>
+  <text x="570" y="155" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="15" fill="#e8e9ef">run the if block</text>
+
+  <!-- Condition 1: False -->
+  <line x1="250" y1="200" x2="250" y2="248" stroke="#ff8a8a" stroke-width="2" marker-end="url(#arrow-red)"/>
+  <text x="262" y="229" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="14" fill="#ff8a8a">False</text>
+
+  <!-- Condition 2 -->
+  <polygon points="250,250 370,300 250,350 130,300" fill="#1e2130" stroke="#8b7dff" stroke-width="2"/>
+  <text x="250" y="305" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="15" fill="#e8e9ef">Is condition 2 True?</text>
+
+  <!-- Condition 2: True -->
+  <line x1="370" y1="300" x2="458" y2="300" stroke="#5fd39a" stroke-width="2" marker-end="url(#arrow-green)"/>
+  <text x="414" y="290" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="14" fill="#5fd39a">True</text>
+  <rect x="460" y="274" width="220" height="52" rx="3" fill="#1e2130" stroke="#5fd39a" stroke-width="2"/>
+  <text x="570" y="305" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="15" fill="#e8e9ef">run the elif block</text>
+
+  <!-- Condition 2: False -->
+  <line x1="250" y1="350" x2="250" y2="398" stroke="#ff8a8a" stroke-width="2" marker-end="url(#arrow-red)"/>
+  <text x="262" y="379" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="14" fill="#ff8a8a">False</text>
+
+  <!-- Else block -->
+  <rect x="140" y="400" width="220" height="52" rx="3" fill="#1e2130" stroke="#f2b866" stroke-width="2"/>
+  <text x="250" y="431" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="15" fill="#e8e9ef">run the else block</text>
+
+  <!-- All paths merge -->
+  <g fill="none" stroke="#9aa0ae" stroke-width="2" stroke-linejoin="round">
+    <path d="M680 150 H716 V476"/>
+    <path d="M680 300 H716"/>
+    <path d="M250 452 V476 H716"/>
+  </g>
+  <line x1="410" y1="476" x2="410" y2="498" stroke="#9aa0ae" stroke-width="2" marker-end="url(#arrow-muted)"/>
+
+  <!-- Continue -->
+  <rect x="240" y="500" width="340" height="40" rx="4" fill="#1e2130" stroke="#9aa0ae" stroke-width="2"/>
+  <text x="410" y="525" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="15" fill="#e8e9ef">continue after the whole if statement</text>
+</svg>

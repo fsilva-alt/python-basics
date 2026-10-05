@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" role="img" aria-labelledby="li-title">
+  <title id="li-title">The list fruits with positive indexes 0 to 3 above each item and negative indexes -4 to -1 below</title>
+
+  <!-- Background panel -->
+  <rect x="8" y="8" width="744" height="284" rx="4" fill="#161821" stroke="#2a2e3a" stroke-width="2"/>
+
+  <!-- The list literal -->
+  <text x="380" y="54" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" fill="#e8e9ef">fruits = [<tspan fill="#5fd39a">"apple"</tspan>, <tspan fill="#5fd39a">"banana"</tspan>, <tspan fill="#5fd39a">"cherry"</tspan>, <tspan fill="#5fd39a">"date"</tspan>]</text>
+
+  <!-- Positive indexes -->
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" font-weight="700" fill="#7cb3ff" text-anchor="middle">
+    <text x="146" y="100">0</text>
+    <text x="302" y="100">1</text>
+    <text x="458" y="100">2</text>
+    <text x="614" y="100">3</text>
+  </g>
+
+  <!-- Item boxes -->
+  <g fill="#1e2130" stroke="#8b7dff" stroke-width="2">
+    <rect x="76" y="114" width="140" height="64" rx="3"/>
+    <rect x="232" y="114" width="140" height="64" rx="3"/>
+    <rect x="388" y="114" width="140" height="64" rx="3"/>
+    <rect x="544" y="114" width="140" height="64" rx="3"/>
+  </g>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" fill="#e8e9ef" text-anchor="middle">
+    <text x="146" y="153">"apple"</text>
+    <text x="302" y="153">"banana"</text>
+    <text x="458" y="153">"cherry"</text>
+    <text x="614" y="153">"date"</text>
+  </g>
+
+  <!-- Negative indexes -->
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" font-weight="700" fill="#f2b866" text-anchor="middle">
+    <text x="146" y="206">-4</text>
+    <text x="302" y="206">-3</text>
+    <text x="458" y="206">-2</text>
+    <text x="614" y="206">-1</text>
+  </g>
+
+  <!-- Legend -->
+  <line x1="40" y1="228" x2="720" y2="228" stroke="#2a2e3a" stroke-width="1.5"/>
+  <rect x="116" y="249" width="14" height="14" rx="2" fill="#7cb3ff"/>
+  <text x="138" y="261" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="15" fill="#e8e9ef">positive: counts from the start</text>
+  <rect x="424" y="249" width="14" height="14" rx="2" fill="#f2b866"/>
+  <text x="446" y="261" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="15" fill="#e8e9ef">negative: counts from the end</text>
+</svg>

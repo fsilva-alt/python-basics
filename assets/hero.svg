@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-labelledby="hero-title">
+  <title id="hero-title">A code editor window, a terminal window and an interactive Python prompt</title>
+
+  <!-- Background panel -->
+  <rect x="8" y="8" width="784" height="384" rx="4" fill="#161821" stroke="#2a2e3a" stroke-width="2"/>
+
+  <!-- Soft decorative glows (clipped to the panel) -->
+  <defs>
+    <clipPath id="hero-panel">
+      <rect x="8" y="8" width="784" height="384" rx="4"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#hero-panel)">
+    <circle cx="690" cy="330" r="120" fill="#8b7dff" opacity="0.06"/>
+    <circle cx="120" cy="70" r="90" fill="#7cb3ff" opacity="0.05"/>
+  </g>
+
+  <!-- ===== Editor window ===== -->
+  <rect x="54" y="54" width="440" height="300" rx="3" fill="#000000" opacity="0.35"/>
+  <rect x="48" y="48" width="440" height="300" rx="3" fill="#1e2130" stroke="#2a2e3a" stroke-width="2"/>
+  <line x1="48" y1="84" x2="488" y2="84" stroke="#2a2e3a" stroke-width="2"/>
+  <circle cx="70" cy="66" r="6" fill="#ff8a8a"/>
+  <circle cx="90" cy="66" r="6" fill="#f2b866"/>
+  <circle cx="110" cy="66" r="6" fill="#5fd39a"/>
+  <rect x="128" y="56" width="92" height="22" rx="2" fill="#161821"/>
+  <text x="174" y="72" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" fill="#9aa0ae">guess.py</text>
+
+  <!-- Line numbers -->
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" fill="#9aa0ae" text-anchor="end" opacity="0.7">
+    <text x="80" y="116">1</text>
+    <text x="80" y="142">2</text>
+    <text x="80" y="168">3</text>
+    <text x="80" y="194">4</text>
+    <text x="80" y="220">5</text>
+    <text x="80" y="246">6</text>
+    <text x="80" y="272">7</text>
+    <text x="80" y="298">8</text>
+    <text x="80" y="324">9</text>
+  </g>
+
+  <!-- Abstract code lines (coloured bars) -->
+  <g>
+    <!-- line 1 -->
+    <rect x="96" y="106" width="56" height="12" rx="2" fill="#8b7dff"/>
+    <rect x="160" y="106" width="88" height="12" rx="2" fill="#7cb3ff"/>
+    <!-- line 2: empty -->
+    <!-- line 3 -->
+    <rect x="96" y="158" width="70" height="12" rx="2" fill="#e8e9ef" opacity="0.85"/>
+    <rect x="174" y="158" width="16" height="12" rx="2" fill="#9aa0ae"/>
+    <rect x="198" y="158" width="112" height="12" rx="2" fill="#7cb3ff"/>
+    <rect x="318" y="158" width="64" height="12" rx="2" fill="#f2b866"/>
+    <!-- line 4 -->
+    <rect x="96" y="184" width="50" height="12" rx="2" fill="#8b7dff"/>
+    <rect x="154" y="184" width="90" height="12" rx="2" fill="#e8e9ef" opacity="0.85"/>
+    <rect x="252" y="184" width="20" height="12" rx="2" fill="#9aa0ae"/>
+    <rect x="280" y="184" width="40" height="12" rx="2" fill="#f2b866"/>
+    <!-- line 5 (indented) -->
+    <rect x="128" y="210" width="80" height="12" rx="2" fill="#e8e9ef" opacity="0.85"/>
+    <rect x="216" y="210" width="150" height="12" rx="2" fill="#5fd39a"/>
+    <!-- line 6 (indented) -->
+    <rect x="128" y="236" width="26" height="12" rx="2" fill="#8b7dff"/>
+    <rect x="162" y="236" width="100" height="12" rx="2" fill="#e8e9ef" opacity="0.85"/>
+    <!-- line 7 (indented twice) -->
+    <rect x="160" y="262" width="60" height="12" rx="2" fill="#7cb3ff"/>
+    <rect x="228" y="262" width="140" height="12" rx="2" fill="#5fd39a"/>
+    <!-- line 8 -->
+    <rect x="96" y="288" width="70" height="12" rx="2" fill="#8b7dff"/>
+    <!-- line 9 -->
+    <rect x="96" y="314" width="60" height="12" rx="2" fill="#7cb3ff"/>
+    <rect x="164" y="314" width="118" height="12" rx="2" fill="#5fd39a"/>
+    <!-- cursor -->
+    <rect x="290" y="310" width="3" height="20" rx="1" fill="#8b7dff"/>
+  </g>
+
+  <!-- ===== Interactive prompt card ===== -->
+  <rect x="546" y="62" width="212" height="112" rx="3" fill="#000000" opacity="0.3"/>
+  <rect x="540" y="56" width="212" height="112" rx="3" fill="#1e2130" stroke="#8b7dff" stroke-width="2"/>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16">
+    <text x="560" y="92" fill="#e8e9ef"><tspan fill="#8b7dff">&gt;&gt;&gt;</tspan> 2 + 3</text>
+    <text x="560" y="118" fill="#5fd39a">5</text>
+    <text x="560" y="146" fill="#8b7dff">&gt;&gt;&gt;</text>
+  </g>
+  <rect x="602" y="132" width="9" height="18" rx="1" fill="#e8e9ef" opacity="0.8"/>
+
+  <!-- ===== Terminal window ===== -->
+  <rect x="410" y="204" width="348" height="164" rx="3" fill="#000000" opacity="0.4"/>
+  <rect x="404" y="196" width="348" height="164" rx="3" fill="#0f1117" stroke="#2a2e3a" stroke-width="2"/>
+  <line x1="404" y1="234" x2="752" y2="234" stroke="#2a2e3a" stroke-width="2"/>
+  <circle cx="426" cy="215" r="6" fill="#ff8a8a"/>
+  <circle cx="446" cy="215" r="6" fill="#f2b866"/>
+  <circle cx="466" cy="215" r="6" fill="#5fd39a"/>
+  <text x="490" y="220" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="14" fill="#9aa0ae">terminal</text>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#e8e9ef">
+    <text x="424" y="262"><tspan fill="#5fd39a">$</tspan> python3 guess.py</text>
+    <text x="424" y="288">Your guess: 50</text>
+    <text x="424" y="314" fill="#f2b866">Too high! Try again.</text>
+    <text x="424" y="340">Your guess: <tspan fill="#9aa0ae">_</tspan></text>
+  </g>
+</svg>

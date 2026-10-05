@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 286" role="img" aria-labelledby="fa-title">
+  <title id="fa-title">Anatomy of a Python function: the def keyword, the function name, parameters with a default value, a docstring, the indented body and a return statement</title>
+
+  <!-- Background panel -->
+  <rect x="8" y="8" width="784" height="270" rx="4" fill="#161821" stroke="#2a2e3a" stroke-width="2"/>
+
+  <!-- ===== Code (each token placed explicitly; 12 units per character) ===== -->
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="20" fill="#e8e9ef">
+    <!-- line 1: def greet(name, greeting="Hello"): -->
+    <text x="110" y="120" textLength="36" fill="#8b7dff">def</text>
+    <text x="158" y="120" textLength="60" fill="#7cb3ff">greet</text>
+    <text x="218" y="120" textLength="12">(</text>
+    <text x="230" y="120" textLength="48" fill="#5fd39a">name</text>
+    <text x="278" y="120" textLength="12">,</text>
+    <text x="302" y="120" textLength="96" fill="#5fd39a">greeting</text>
+    <text x="398" y="120" textLength="12">=</text>
+    <text x="410" y="120" textLength="84" fill="#f2b866">"Hello"</text>
+    <text x="494" y="120" textLength="24">):</text>
+
+    <!-- line 2: docstring -->
+    <text x="158" y="156" textLength="396" fill="#9aa0ae">"""Return a friendly greeting."""</text>
+
+    <!-- line 3: message = f"{greeting}, {name}!" -->
+    <text x="158" y="192" textLength="84">message</text>
+    <text x="254" y="192" textLength="12">=</text>
+    <text x="278" y="192" textLength="264" fill="#f2b866">f"{greeting}, {name}!"</text>
+
+    <!-- line 4: return message -->
+    <text x="158" y="228" textLength="72" fill="#8b7dff">return</text>
+    <text x="242" y="228" textLength="84">message</text>
+  </g>
+
+  <!-- ===== Annotations above line 1 ===== -->
+  <g fill="none" stroke-width="2">
+    <!-- tier 1 -->
+    <path d="M110 100 V94 H146 V100" stroke="#8b7dff"/>
+    <path d="M158 100 V94 H218 V100" stroke="#7cb3ff"/>
+    <path d="M410 100 V94 H494 V100" stroke="#f2b866"/>
+    <!-- tier 2 -->
+    <path d="M230 66 V60 H494 V66" stroke="#5fd39a"/>
+  </g>
+  <g font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="15" font-weight="700" text-anchor="middle">
+    <text x="128" y="86" fill="#8b7dff">keyword</text>
+    <text x="188" y="86" fill="#7cb3ff">name</text>
+    <text x="452" y="86" fill="#f2b866">default value</text>
+    <text x="362" y="52" fill="#5fd39a">parameters</text>
+  </g>
+
+  <!-- ===== Body bracket (left) ===== -->
+  <path d="M148 140 H140 V234 H148" fill="none" stroke="#e8e9ef" stroke-opacity="0.8" stroke-width="2"/>
+  <text x="130" y="190" text-anchor="end" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#e8e9ef">body</text>
+  <text x="130" y="208" text-anchor="end" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="14" fill="#9aa0ae">(indented)</text>
+
+  <!-- ===== Right-hand labels ===== -->
+  <g stroke="#9aa0ae" stroke-width="1.5" stroke-dasharray="4 4">
+    <line x1="566" y1="151" x2="592" y2="151"/>
+    <line x1="338" y1="223" x2="592" y2="223"/>
+  </g>
+  <g font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+    <text x="600" y="156" font-size="15" font-weight="700" fill="#e8e9ef">docstring</text>
+    <text x="600" y="176" font-size="14" fill="#9aa0ae">describes the function</text>
+    <text x="600" y="228" font-size="15" font-weight="700" fill="#8b7dff">return</text>
+    <text x="600" y="248" font-size="14" fill="#9aa0ae">sends a result back</text>
+  </g>
+</svg>

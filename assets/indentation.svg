@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 256" role="img" aria-labelledby="ind-title">
+  <title id="ind-title">An if statement whose two body lines are indented by 4 spaces; the line after the block is not indented</title>
+
+  <defs>
+    <marker id="arrow-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#f2b866"/>
+    </marker>
+  </defs>
+
+  <!-- Background panel -->
+  <rect x="8" y="8" width="784" height="240" rx="4" fill="#161821" stroke="#2a2e3a" stroke-width="2"/>
+
+  <!-- Highlighted body -->
+  <rect x="180" y="112" width="332" height="74" rx="2" fill="#8b7dff" fill-opacity="0.14" stroke="#8b7dff" stroke-width="2"/>
+
+  <!-- The 4 spaces of indentation -->
+  <rect x="190" y="116" width="41" height="66" rx="2" fill="#f2b866" fill-opacity="0.22"/>
+  <g fill="#f2b866">
+    <circle cx="195.1" cy="129" r="2.2"/>
+    <circle cx="205.4" cy="129" r="2.2"/>
+    <circle cx="215.6" cy="129" r="2.2"/>
+    <circle cx="225.9" cy="129" r="2.2"/>
+    <circle cx="195.1" cy="167" r="2.2"/>
+    <circle cx="205.4" cy="167" r="2.2"/>
+    <circle cx="215.6" cy="167" r="2.2"/>
+    <circle cx="225.9" cy="167" r="2.2"/>
+  </g>
+
+  <!-- Code -->
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17" fill="#e8e9ef">
+    <text x="190" y="58">temperature = <tspan fill="#f2b866">30</tspan></text>
+    <text x="190" y="96"><tspan fill="#8b7dff">if</tspan> temperature &gt; <tspan fill="#f2b866">25</tspan>:</text>
+    <text x="231" y="134"><tspan fill="#7cb3ff">print</tspan>(<tspan fill="#5fd39a">"It's warm!"</tspan>)</text>
+    <text x="231" y="172"><tspan fill="#7cb3ff">print</tspan>(<tspan fill="#5fd39a">"Drink some water."</tspan>)</text>
+    <text x="190" y="210"><tspan fill="#7cb3ff">print</tspan>(<tspan fill="#5fd39a">"Done."</tspan>)</text>
+  </g>
+
+  <!-- Left label: 4 spaces -->
+  <text x="40" y="154" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#f2b866">4 spaces</text>
+  <text x="40" y="174" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="14" fill="#9aa0ae">per level</text>
+  <line x1="122" y1="149" x2="184" y2="149" stroke="#f2b866" stroke-width="2" marker-end="url(#arrow-amber)"/>
+
+  <!-- Right labels -->
+  <g font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="15" fill="#e8e9ef">
+    <!-- colon -->
+    <line x1="406" y1="91" x2="528" y2="91" stroke="#9aa0ae" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <text x="536" y="96">a colon starts the block</text>
+
+    <!-- body bracket -->
+    <path d="M514 116 H522 V182 H514" fill="none" stroke="#8b7dff" stroke-width="2"/>
+    <text x="536" y="136" font-weight="700" fill="#8b7dff">indented body</text>
+    <text x="536" y="158">runs only when the</text>
+    <text x="536" y="178">condition is True</text>
+
+    <!-- after the block -->
+    <line x1="346" y1="205" x2="528" y2="205" stroke="#9aa0ae" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <text x="536" y="210">not indented: always runs</text>
+  </g>
+</svg>

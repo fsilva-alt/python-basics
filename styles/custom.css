@@ -1,0 +1,31 @@
+/* Course-specific styles. They are inlined after the base theme, so you can
+   (1) redefine design tokens and (2) add new classes for use in your Markdown. */
+
+/* 1. Tokens: chapters fill the whole content area by default.
+   Uncomment to cap them at a narrower reading column instead. */
+:root {
+  /* --content-w: 860px; */
+}
+
+/* 2. New definitions. Use them from Markdown with raw HTML or {.class} attributes,
+   e.g.  <p class="lead">…</p>  */
+.prose .lead {
+  font-size: 1.14em;
+  line-height: 1.6;
+  color: var(--text-2);
+}
+
+/* Confetti pieces created by scripts/custom.js when the course is finished. */
+.confetti {
+  position: fixed;
+  top: -12px;
+  z-index: 90;
+  width: 9px;
+  height: 14px;
+  border-radius: 2px;
+  pointer-events: none;
+  animation: confetti-fall var(--fall, 2.4s) cubic-bezier(.2, .6, .4, 1) forwards;
+}
+@keyframes confetti-fall {
+  to { transform: translate(var(--drift, 0), 105vh) rotate(var(--spin, 540deg)); opacity: .9; }
+}

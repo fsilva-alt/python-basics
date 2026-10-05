@@ -1,0 +1,33 @@
+# Python Basics — example course.
+# Every option is documented in templates/starter/course.yml and in the README.
+
+title: Python Basics
+subtitle: Write your first Python programs, one small step at a time.
+description: >
+  A hands-on introduction to Python for complete beginners. Install Python, learn variables,
+  decisions, loops and functions, and finish by building a number-guessing game.
+authors:
+  - Course Team
+updated: auto            # date of the most recently edited chapter
+language: en
+
+accent: "#3b6cf6"         # brand colour (light mode); dark mode derives a lighter tint
+logo: assets/logo.svg     # also used as favicon
+
+numbering: course         # chapter numbers: course (1, 2, 3…) | part (1.1, 1.2…) | none
+transition: slide         # slide | fade | none
+highlight: true           # build-time syntax highlighting
+line_numbers: false       # default for code blocks (per block: linenums / nolinenums)
+
+# Parts are discovered from the sub-folders of chapters/ (each with a _part.yml).
+# To list them explicitly instead:
+#
+# parts:
+#   - title: Getting started
+#     chapters:
+#       - chapters/01-getting-started/*.md
+
+styles:
+  - styles/custom.css
+scripts:
+  - scripts/custom.js
